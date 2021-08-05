@@ -307,7 +307,10 @@ img {
   text-align: center;
   padding: 30px 0;
 }
-
+/* loyal customers */
+.customers-list {
+  display: flex;
+}
 /* footer */
 .footer {
   padding: 60px;
