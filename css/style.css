@@ -206,53 +206,43 @@ img {
 }
 .strenghts-list {
   display: flex;
-  margin-left: -30px;
 }
 .strenghts-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
-.strenghts-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--background-color-tertiary);
+.strenghts-item:first-child {
+  margin-left: 0;
 }
-.icon-antenna::before {
-  background-image: url();
-}
-.icon-clock::before {
-  background-image: url();
-}
-.icon-diagram::before {
-  background-image: url();
-}
-.icon-astronaut::before {
-  background-image: url();
-}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
 }
 .strengths-title {
   margin-bottom: 10px;
-  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 .strengths-text {
-  color: var(--secondary-text-colort);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-colort);
+}
+
+.thumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  background-color: var(--background-color-tertiary);
 }
 
 /* services section */
@@ -408,4 +398,7 @@ img {
 }
 .section {
   padding: 94px 0;
+}
+
+.btn-icon {
 }
