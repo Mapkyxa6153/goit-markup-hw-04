@@ -260,7 +260,7 @@ img {
 /* section Team */
 .team-cards {
   display: flex;
-  margin-left: -30px;
+  /* margin-left: -30px; */
 }
 .team-card {
   flex-basis: calc(100% / 4 - 30px);
@@ -269,6 +269,9 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-card:first-child {
+  margin-left: 0;
 }
 
 .team {
@@ -301,15 +304,18 @@ img {
 }
 .member-description {
   text-align: center;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .social-links {
-  padding-bottom: 42px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
   display: flex;
   justify-content: space-around;
 }
 
-.social-link svg {
+.social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
