@@ -215,10 +215,6 @@ img {
   margin-left: 0;
 }
 
-.title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .strengths-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -307,9 +303,48 @@ img {
   text-align: center;
   padding: 30px 0;
 }
+.social-links {
+  padding-bottom: 42px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.social-icon:hover {
+  fill: white;
+}
+.social-link:hover {
+  background-color: var(--akcent-text-color);
+  fill: white;
+}
+
 /* loyal customers */
+.customers-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
 .customers-list {
   display: flex;
+}
+.customer-item {
+  outline: 1px solid salmon;
 }
 /* footer */
 .footer {
@@ -400,8 +435,10 @@ img {
   margin-right: auto;
 }
 .section {
+  outline: 2px solid green;
   padding: 94px 0;
 }
 
 .btn-icon {
+  margin-right: 10px;
 }
