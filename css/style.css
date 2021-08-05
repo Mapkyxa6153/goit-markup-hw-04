@@ -309,7 +309,7 @@ img {
   justify-content: space-around;
 }
 
-.social-icon {
+.social-link svg {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
@@ -323,9 +323,8 @@ img {
   align-items: center;
   border-radius: 50%;
 }
-.social-icon:hover {
-  fill: white;
-}
+
+.social-link:hover svg,
 .social-link:hover {
   background-color: var(--akcent-text-color);
   fill: white;
