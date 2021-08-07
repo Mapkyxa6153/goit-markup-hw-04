@@ -21,11 +21,20 @@ body {
   font-family: Roboto, sans-serif;
 }
 /* Убирает точки у списков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 ul,
 p {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+ul {
+  list-style: none;
 }
 img {
   display: block;
@@ -118,7 +127,7 @@ img {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -159,9 +168,8 @@ img {
 .hero-section {
   padding: 200px 0;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../images/hero-overlay.jpg);
-  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-overlay.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -243,13 +251,17 @@ img {
 .thumb {
   padding-top: 25px;
   padding-bottom: 25px;
+  text-align: center;
 
   border-radius: 4px;
   margin-bottom: 30px;
 
   background-color: var(--background-color-tertiary);
 }
-
+.thumb-icon {
+  width: 70px;
+  height: 70px;
+}
 /* services section */
 
 .services-title {
@@ -307,23 +319,21 @@ img {
   margin-bottom: 10px;
 }
 .position {
-  color: var(--secondary-text-colort);
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-colort);
 }
 .member-description {
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .social-links {
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-  margin-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-icon {
@@ -339,6 +349,10 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  margin-right: 10px;
+}
+.social-link:last-child {
+  margin-right: 0px;
 }
 .social-link:focus svg,
 .social-link:focus,
@@ -361,7 +375,19 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.customer-item {
+/* .customer-item {
+  border-radius: 4px;
+  margin-left: 30px;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+} */
+.customer-item:first-child {
+  margin-left: 0;
+}
+.customer-link {
+  display: block;
   border-radius: 4px;
   margin-left: 30px;
   width: 170px;
@@ -369,20 +395,23 @@ img {
 
   border: 1px solid #afb1b8;
 }
-.customer-item:first-child {
-  margin-left: 0;
-}
+
 .customer-icon {
+  display: block;
   width: 100%;
   height: 100%;
   fill: #afb1b8;
 }
-
-.customer-item:hover,
+.customer-link:hover {
+  fill: var(--akcent-text-color);
+  color: var(--akcent-text-color);
+  border-color: var(--akcent-text-color);
+}
+/* .customer-item:hover,
 .customer-item:focus {
   fill: var(--akcent-text-color);
   border-color: var(--akcent-text-color);
-}
+} */
 .customer-icon:hover,
 .customer-icon:focus {
   fill: var(--akcent-text-color);
@@ -450,6 +479,9 @@ img {
 .social-link.bot {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.social-icon.bot {
+  fill: var(--background-color);
+}
 .social-link.bot:hover,
 .social-link.bot:focus {
   background-color: var(--akcent-text-color);
@@ -478,6 +510,10 @@ img {
   text-decoration: none;
   display: block;
 }
+.works-examples .link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .works .title {
   color: var(--primary-text-color);
@@ -488,7 +524,6 @@ img {
   margin-bottom: 4px;
 }
 .works .description {
-  margin-bottom: 20px;
   color: var(--secondary-text-colort);
   font-weight: 400;
   font-size: 16px;
